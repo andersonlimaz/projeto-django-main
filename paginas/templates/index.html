@@ -6,7 +6,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Charity</title>
+
+    {% block titulo %}
+    <title>Home</title>
+    {% endblock %}
+
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
@@ -52,7 +56,8 @@
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="wrapper">
-              <div class="content">                
+              <div class="content">             
+{% block conteudo %}   
                 <h1>Site de Doação</h1>
                 <p>Somos uma organização comprometida em fazer a diferença na vida das pessoas. Nossa missão é proporcionar apoio e assistência a comunidades carentes 
                   </p>
@@ -292,105 +297,14 @@
         </div>
       </div>
     </section>
-
-    <!-- ========bg-05 started ========= -->
-
-    <section class="bg-05">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="heading">
-              <h2>Our Team</h2>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-            <div class="team-wrapper">
-              <div class="team-img">
-                <img src="{% static 'img/team/1.jpg' %}">
-              </div>
-              <div class="team-content">
-                <h3>James</h3>
-                <p>Designer</p>
-                <ul>
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                  <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-            <div class="team-wrapper">
-              <div class="team-img">
-                <img src="{% static 'img/team/3.jpg' %}">
-              </div>
-              <div class="team-content">
-                <h3>Albert</h3>
-                <p>Art Designer</p>
-                <ul>
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                  <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-            <div class="team-wrapper">
-              <div class="team-img">
-                <img src="{% static 'img/team/2.jpg' %}">
-              </div>
-              <div class="team-content">
-                <h3>Johns</h3>
-                <p>SEO</p>
-                <ul>
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                  <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-            <div class="team-wrapper">
-              <div class="team-img">
-                <img src="{% static 'img/team/4.jpg' %}">
-              </div>
-              <div class="team-content">
-                <h3>Smith</h3>
-                <p>Developer</p>
-                <ul>
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                  <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
+{% endblock %}
   <footer>
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
           <div class="_kl_ds_we">
             <div class="head-footer">
-              <h3>Smart Charitables</h3>
+              <h3>Site de doação </h3>
               <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua.</p>
               <ol>
@@ -449,8 +363,8 @@
           <div class="row _pl_we_sq">
             <div class="col-12">
               <div class="last-01">
-                <p>2015 @ All Rights Reserved Designed and developed by<a
-                    href="https://www.smarteyeapps.com">SmarteyeTechnologies</a></p>
+                <p>2023 @ Desenvolvido por: Anderson Brito de Lima<a
+                    href="https://github.com/andersonlimaz/projeto-django-main">Github</a></p>
               </div>
             </div>
           </div>
