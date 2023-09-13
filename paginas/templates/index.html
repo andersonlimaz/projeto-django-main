@@ -47,7 +47,7 @@
   </header>
 
   <!-- ======== main started ========= -->
-
+{% block conteudo %}
   <main class="charity-01-main">
 
       <!-- ======== banner started ========= -->
@@ -57,7 +57,7 @@
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="wrapper">
               <div class="content">             
-{% block conteudo %}   
+   
                 <h1>Site de Doação</h1>
                 <p>Somos uma organização comprometida em fazer a diferença na vida das pessoas. Nossa missão é proporcionar apoio e assistência a comunidades carentes 
                   </p>
@@ -205,99 +205,8 @@
       </div>
     </section>
 
-    <!-- ======== _ng_cs_we_rw started ========= -->
-
-    <section class="_ng_cs_we_rw">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
-            <div class="_lk_bg_cd">
-              <i class="fal fa-school"></i>
-              <div style="color:#fff;font-size:20px;" class="counting" data-count="200">200</div>
-              <h5>Primary Schools</h5>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
-            <div class="_lk_bg_cd">
-              <i class="fal fa-hospitals"></i>
-              <div style="color:#fff;font-size:20px;" class="counting" data-count="107">107</div>
-              <h5>Hospitals</h5>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
-            <div class="_lk_bg_cd">
-              <i class="fal fa-hands-helping"></i>
-              <div style="color:#fff;font-size:20px;" class="counting" data-count="20">20</div>
-              <h5>Volunteers</h5>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
-            <div class="_lk_bg_cd">
-              <i class="fal fa-trophy"></i>
-              <div style="color:#fff;font-size:20px;" class="counting" data-count="123">123</div>
-              <h5>Winning Awards</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========bg-03 started ========= -->
-
-    <section class="bg-03">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="head-01">
-              <h2>Latest news</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <article class="_kl_cd">
-              <div class="_i-tr">
-                <img src="{% static 'img/blog/blog_1.jpg' %}">
-              </div>
-              <div class="_oi_er_we">
-                <h3>Brilliant After All, A New Album by Rebecca: Help poor people</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Molestias eius illum libero dolor
-                  nobis....</p>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <article class="_kl_cd">
-              <div class="_i-tr">
-                <img src="{% static 'img/blog/blog_2.jpg' %}">
-              </div>
-              <div class="_oi_er_we">
-                <h3>South african pre primary school build for children</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Molestias eius illum libero dolor
-                  nobis....</p>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <article class="_kl_cd">
-              <div class="_i-tr">
-                <img src="{% static 'img/blog/blog_3.jpg' %}">
-              </div>
-              <div class="_oi_er_we">
-                <h3>Provide pure water for syrian poor people</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Molestias eius illum libero dolor
-                  nobis....</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
 {% endblock %}
+
   <footer>
     <div class="container">
       <div class="row">
