@@ -1,6 +1,6 @@
 from django.urls import path
 from .views import PaginaInicial, Doe, Servicos, Blog, Contato
-
+from . import views
 urlpatterns = [ 
     # Sempre que for criar path caminho 
     #path('endereço', MinhaView.as_view(), name='Nome-da-url'),
@@ -9,5 +9,6 @@ urlpatterns = [
     path('servicos/', Servicos.as_view(), name='servicos'),
     path('blog/', Blog.as_view(), name='blog'),
     path('contato/', Contato.as_view(), name='contato'),
+    path('modelform/', views.form_modelform(), name='form_modelform'),
 
 ]

@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class Doar(models.Model):
+class modelform(models.Model):
     nome = models.CharField(max_length=30)
     email = models.EmailField()
     SEXO_CHOICES = [

@@ -15,3 +15,6 @@ class Blog(TemplateView):
 
 class Contato(TemplateView):
     template_name = "contact-us.html"
+
+def form_modelform(request):
+    pass
