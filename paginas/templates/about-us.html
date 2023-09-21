@@ -35,7 +35,7 @@
      
           <link rel="canonical" href="https://doar.lbv.org">                
     
-    <title>Página Oficial de Doação - LBV</title>
+    <title>Página de Doação </title>
       
       <noscript>		
         <meta http-equiv='refresh' content='0; URL=https://doar.lbv.org/javascript_disabled'>	
@@ -48,16 +48,7 @@
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-WMKWG8');</script>
           <!-- End Google Tag Manager -->
-  
-      <script type="text/javascript">
-  
-        if (!navigator.cookieEnabled) {
-  
-          window.location.href = 'https://doar.lbv.org/cookies_disabled';
-        }
-  
-      </script>
-  
+    
   
     <!-- OneTrust Consent Receipt Start -->
     <script src="{% static 'js/otconsent-1.0.min.js' %}"  type="text/javascript" charset="UTF-8" id="consent-receipt-script">
@@ -87,11 +78,7 @@
       </script>
       
       <script src="{% static 'js/_bower.min.js' %}"></script>
-  
-  
       <script src="{% static 'js/base.min.js' %}"></script>
-  
-  
       <script type="text/javascript">
   
         // Clean all URL parameters.
@@ -99,7 +86,6 @@
         clean_all_url_parameters();
       </script>
   
-      
     <script src="{% static 'js/donation.min.js' %}"></script>
   
     </head>
@@ -336,9 +322,11 @@
                   
                   <input name="lgpd" type="checkbox" value="Aceite"> Li e concordo que minhas informações serão tratadas de acordo com a lei
                   </div>
-  
+                  <form method="post">
+                  {% csrf_token %}
+                  {{ formulario.as_p }}
                   <input class="btn btn--submit btn-lg btn-not-radius btn-default btn-block" type="submit" value="Confirmar Doação">
-              
+                </form>
               </form>
   
             </div>
