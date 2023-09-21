@@ -3,526 +3,552 @@
 
 
 {% block conteudo %}
+<!DOCTYPE html><html lang="pt-br" class=" async-hide"><head>
 
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMKWG8" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- Page hiding snippet (recommended)  -->
+  <style>.async-hide { opacity: 0 !important} </style>
+  <script async="" src="{% static 'js/gtm.js' %}"></script><script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+  })(window,document.documentElement,'async-hide','dataLayer',4000,
+  {'GTM-WMKWG8':true});</script>
+      
+    <meta charset="UTF-8">
+      
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+          <meta name="description" content="Todos os dias, temos a chance de fazer alguma coisa pra mudar o mundo. Gestos simples, porém significativos. Quer fazer algo? Doe agora.">
+  
+          <meta property="og:url" content="https://doar.lbv.org">
+  
+          <meta property="og:type" content="website">
+  
+          <meta property="og:title" content="E aí, você já se arrependeu de ter perdido alguma oportunidade?">
+    
+          <meta property="og:description" content="Todos os dias, temos a chance de fazer alguma coisa pra mudar o mundo. Gestos simples, porém significativos. Eu não perdi a chance de ajudar a LBV. E você?">
+  
+    <meta name="theme-color" content="#05276C">
+  
+
+     
+          <link rel="canonical" href="https://doar.lbv.org">                
+    
+    <title>Página Oficial de Doação - LBV</title>
+      
+      <noscript>		
+        <meta http-equiv='refresh' content='0; URL=https://doar.lbv.org/javascript_disabled'>	
+      </noscript>
+                
+          <!-- Google Tag Manager -->
+          <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-WMKWG8');</script>
+          <!-- End Google Tag Manager -->
+  
+      <script type="text/javascript">
+  
+        if (!navigator.cookieEnabled) {
+  
+          window.location.href = 'https://doar.lbv.org/cookies_disabled';
+        }
+  
+      </script>
+  
+  
+    <!-- OneTrust Consent Receipt Start -->
+    <script src="{% static 'js/otconsent-1.0.min.js' %}"  type="text/javascript" charset="UTF-8" id="consent-receipt-script">
+        settingsUrl="https://privacyportal-br-cdn.onetrust.com/consentmanager-settings/f6b411e8-5f47-4420-88a1-43ea8874fc55/79b5a8fa-b3f9-43ce-8fd5-386f5c9a0ae8-active.json";
+    </script>
+    <!-- OneTrust Consent Receipt End -->
+  
+      <link media="all" type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  
+  
+      <link media="all" type="text/css" rel="stylesheet" href="{% static 'css/base.min.css' %}">
+  
+  
+        
+    <link media="all" type="text/css" rel="stylesheet" href="{% static 'css/donation-and-product.min.css' %}">
+  
+      
+      <script type="text/javascript">	
+  
+        base_url = 'https://doar.lbv.org';
+  
+        donation_url = 'https://doar.lbv.org';
+  
+        product_url = 'https://doar.lbv.org/product';
+  
+        api = {"version":"v1","payment":{"credit_card":{"code":1},"debit":{"code":2},"oi":{"code":3},"billet":{"code":4},"instant_payment":{"code":5},"picpay":{"code":6},"pix":{"code":7}},"credit_card_flag":{"visa":{"code":1},"mastercard":{"code":2},"elo":{"code":3},"hipercard":{"code":4},"amex":{"code":5},"diners":{"code":6}},"gender":{"male":{"code":1},"female":{"code":2}},"type":{"submission_successful":{"code":0},"submission_failure":{"code":1},"filling":{"code":2},"pre_filling":{"code":3}},"periodicity":{"once":{"code":1},"monthly":{"code":2}},"bank":{"banrisul":{"code":41},"bradesco":{"code":237},"caixa":{"code":104},"hsbc":{"code":399},"santander":{"code":33},"sicoob":{"code":756},"sicredi":{"code":748},"itau":{"code":341},"banco_brasil":{"code":1}},"http_code":{"success":{"code":200},"created":{"code":201},"bad_request":{"code":400},"unauthorized":{"code":401},"forbidden":{"code":403},"not_found":{"code":404},"method_not_allowed":{"code":405},"not_acceptable":{"code":406},"unavailable":{"code":503},"internal_error":{"code":500}},"country":{"brazil":{"code":1},"argentina":{"code":2}},"min_age":18,"min_amount":5,"product":{"t_shirt":{"code":1,"data":{"size":{"extra_small":{"code":1},"small":{"code":2},"medium":{"code":3},"large":{"code":4},"extra_large":{"code":5},"extra_extra_large":{"code":6}},"color":{"blue":{"code":1},"green":{"code":2},"gray":{"code":3}},"stamp":{"thought":{"love_conquest":{"code":1},"destiny":{"code":2}}}}},"pen_drive":{"code":2,"data":{"storage":{"2gb":{"code":1},"4gb":{"code":2}}}}},"available_payments":[1,6,7],"available_credit_card_flags":[1,2,5,6,3,4]}
+      </script>
+      
+      <script src="{% static 'js/_bower.min.js' %}"></script>
+  
+  
+      <script src="{% static 'js/base.min.js' %}"></script>
+  
+  
+      <script type="text/javascript">
+  
+        // Clean all URL parameters.
+        // @see  utils.js
+        clean_all_url_parameters();
+      </script>
+  
+      
+    <script src="{% static 'js/donation.min.js' %}"></script>
+  
+    </head>
+    
+    <body>
+                         <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMKWG8"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <header id="header">
-  </header>
-
-  <div id="main" class="variant--A">
+   
+      <header id="header">
+  
+        
+      </header>
+      
+      <div id="main" class="variant--A">
+  
+          
     <div class="container">
+      
       <div class="col-md-8">
+        
         <h1 class="page--title hidden-xs hidden-sm vertical-align" data-vertical-align-parent="html">
+          
           <div class="mark mark--white">Um minuto para doar,</div>
+          
           <div class="mark mark--white">Uma vida de mudanças</div>
         </h1>
       </div>
-
+  
       <div class="col-md-4">
-
+  
         <div class="row">
+  
+        
         </div>
-
+  
         <div class="row">
-
+  
           <div class="vertical-align" data-vertical-align-parent="html">
-
+  
             <div class="well well-sm">
-
-              <form method="POST" action="https://doar.lbv.org/ " accept-charset="UTF-8" class="form--donation"><input
-                  name="_token" type="hidden" value="tVC7cfpDqryRZ3ygjFV8rsLT30Q6cp3AF7BwP22S">
-
-                <input name="transaction_code" type="hidden" value="2023092101101336">
-
-                <input name="ip" type="hidden" value="194.87.31.36">
-
-                <input name="country" type="hidden" value="1">
-
-                <input name="due_date" type="hidden" value="1">
-
-                <input name="variant" type="hidden" value="A">
-
-                <input name="stamp" type="hidden">
-
-
-                <div class="form-group form-group--donation_option">
-
-                  <label
-                    class="label label-danger label-danger--donation_option label-not-margin label-block label-not-radius"></label>
-
-                  <select
-                    class="form-control form-control--donation_option donation_option input-lg input-not-radius float-label"
-                    name="donation_option">
-
+  
+              <form method="POST" action="https://doar.lbv.org/ " accept-charset="UTF-8" class="form--donation"><input name="_token" type="hidden" value="tVC7cfpDqryRZ3ygjFV8rsLT30Q6cp3AF7BwP22S">
+  
+                    <input name="transaction_code" type="hidden" value="2023092101101336">
+  
+                    <input name="ip" type="hidden" value="194.87.31.36">
+  
+                    <input name="country" type="hidden" value="1">
+  
+                    <input name="due_date" type="hidden" value="1">
+  
+                    <input name="variant" type="hidden" value="A">
+  
+                              <input name="stamp" type="hidden">
+    
+                              
+                  <div class="form-group form-group--donation_option">
+  
+                      <label class="label label-danger label-danger--donation_option label-not-margin label-block label-not-radius"></label>
+                  
+                  <select class="form-control form-control--donation_option donation_option input-lg input-not-radius float-label" name="donation_option">
+                    
                     <option selected="selected" value="">Selecione o valor</option>
-
+                    
                     <optgroup label="Quero doar todos os meses">
-
+                      
                       <option value="1" data-periodicity="2" data-amount="19.90">R$ 19,90</option>
-
+                      
                       <option value="2" data-periodicity="2" data-amount="34.90">R$ 34,90</option>
-
+                      
                       <option value="3" data-periodicity="2" data-amount="64.90">R$ 64,90</option>
                     </optgroup>
-
+                    
                     <optgroup label="Quero doar uma única vez">
-
-                      <option value="4" data-periodicity="1" data-amount="50.00">R$ 50,00 - Doar Meia Cesta de Alimentos
-                      </option>
-
-                      <option value="5" data-periodicity="1" data-amount="100.00">R$ 100,00 - Doar 1 Cesta de Alimentos
-                      </option>
-
+                      
+                      <option value="4" data-periodicity="1" data-amount="50.00">R$ 50,00 - Doar Meia Cesta de Alimentos </option>
+                      
+                               <option value="5" data-periodicity="1" data-amount="100.00">R$ 100,00 - Doar 1 Cesta de Alimentos</option>
+                      
                       <option value="6" data-periodicity="1" data-amount="90.00">R$ 90,00 - Doar 1 Kit Escolar</option>
                     </optgroup>
-
+                    
                     <option value="-1">Outros valores</option>
                   </select>
-                </div>
-
-
-                <div class="form-group form-group--periodicity hidden--no-force">
-
-                  <label
-                    class="label label-danger label-danger--periodicity label-not-margin label-block label-not-radius"></label>
-
-                  <select
-                    class="form-control form-control--periodicity periodicity input-lg input-not-radius float-label"
-                    name="periodicity">
-                    <option selected="selected" value="">Periodicidade</option>
-                    <option value="1">Uma Única Vez</option>
-                    <option value="2">Todos os Meses</option>
-                  </select>
-                </div>
-
+                  </div>
+                                                        
+         
+                  <div class="form-group form-group--periodicity hidden--no-force">
+  
+                      <label class="label label-danger label-danger--periodicity label-not-margin label-block label-not-radius"></label>
+                      
+                      <select class="form-control form-control--periodicity periodicity input-lg input-not-radius float-label" name="periodicity"><option selected="selected" value="">Periodicidade</option><option value="1">Uma Única Vez</option><option value="2">Todos os Meses</option></select>
+                  </div>
+  
                 <div class="form-group form-group--amount hidden--no-force">
-
-                  <label
-                    class="label label-danger label-danger--amount label-not-margin label-block label-not-radius"></label>
-
-                  <input class="form-control form-control--amount amount input-lg input-not-radius float-label"
-                    placeholder="Valor" maxlength="12" name="amount" type="tel">
-                </div>
-
-                <div class="form-group form-group--name">
-
-                  <label
-                    class="label label-danger label-danger--name label-not-margin label-block label-not-radius"></label>
-
-                  <input class="form-control form-control--name name input-lg input-not-radius float-label"
-                    placeholder="Nome Completo" id="name-donation" name="name" type="text">
-                </div>
-
-                <div class="form-group form-group--email">
-
-                  <label
-                    class="label label-danger label-danger--email label-not-margin label-block label-not-radius"></label>
-
-                  <input class="form-control form-control--email email input-lg input-not-radius float-label"
-                    placeholder="E-mail" id="email-donation" name="email" type="email">
-                </div>
-
-                <div class="form-group form-group--gender">
-
-                  <label
-                    class="label label-danger label-danger--gender label-not-margin label-block label-not-radius"></label>
-
-                  <select class="form-control form-control--gender gender input-lg input-not-radius float-label"
-                    name="gender">
-                    <option selected="selected" value="">Sexo</option>
-                    <option value="1">Masculino</option>
-                    <option value="2">Feminino</option>
-                  </select>
-                </div>
-
-                <div class="form-group form-group--birthday">
-
-                  <label
-                    class="label label-danger label-danger--birthday label-not-margin label-block label-not-radius"></label>
-
-                  <input class="form-control form-control--birthday birthday input-lg input-not-radius float-label"
-                    placeholder="Data de nascimento" name="birthday" type="tel">
-                </div>
-
-                <div class="form-group form-group--telephone">
-
-                  <label
-                    class="label label-danger label-danger--telephone label-not-margin label-block label-not-radius"></label>
-
-                  <input class="form-control form-control--telephone telephone input-lg input-not-radius float-label"
-                    placeholder="Telefone" autocomplete="off" name="telephone" type="tel">
-                </div>
-
-                <div class="form-group form-group--cpf">
-
-                  <label
-                    class="label label-danger label-danger--cpf label-not-margin label-block label-not-radius"></label>
-
-                  <input class="form-control form-control--cpf cpf input-lg input-not-radius float-label"
-                    placeholder="CPF" id="cpf-donation" name="cpf" type="tel">
-                </div>
-
-                <div class="form-group form-group--payment hidden--no-force">
-
-                  <label
-                    class="label label-danger label-danger--payment label-not-margin label-block label-not-radius"></label>
-
-                  <select class="form-control form-control--payment payment input-lg input-not-radius float-label"
-                    name="payment">
-                    <option selected="selected" value="">Forma de pagamento</option>
-                  </select>
-                </div>
-
-                <div
-                  class="fieldset fieldset-payment fieldset-payment--1 fieldset-payment--credit_card hidden--no-force">
-
-                  <div class="form-group form-group--credit_card_flag">
-
-                    <label
-                      class="label label-danger label-danger--credit_card_flag label-not-margin label-block label-not-radius"></label>
-
-                    <select
-                      class="form-control form-control--credit_card_flag credit_card_flag input-lg input-not-radius float-label"
-                      name="credit_card_flag">
-                      <option selected="selected" value="">Bandeira</option>
-                    </select>
+  
+                      <label class="label label-danger label-danger--amount label-not-margin label-block label-not-radius"></label>
+                      
+                <input class="form-control form-control--amount amount input-lg input-not-radius float-label" placeholder="Valor" maxlength="12" name="amount" type="tel">
                   </div>
-
-                  <div class="form-group form-group--credit_card">
-
-                    <label
-                      class="label label-danger label-danger--credit_card label-not-margin label-block label-not-radius"></label>
-
-                    <input
-                      class="form-control form-control--credit_card credit_card input-lg input-not-radius float-label"
-                      placeholder="Número" name="credit_card" type="tel">
+  
+                  <div class="form-group form-group--name">
+                     
+                      <label class="label label-danger label-danger--name label-not-margin label-block label-not-radius"></label>
+                      
+                      <input class="form-control form-control--name name input-lg input-not-radius float-label" placeholder="Nome Completo" id="name-donation" name="name" type="text">
                   </div>
-
-                  <div class="form-group form-group--credit_card_holder">
-
-                    <label
-                      class="label label-danger label-danger--credit_card_holder label-not-margin label-block label-not-radius"></label>
-
-                    <input
-                      class="form-control form-control--credit_card_holder credit_card_holder input-lg input-not-radius float-label"
-                      placeholder="Nome impresso no Cartão" name="credit_card_holder" type="text">
+  
+                  <div class="form-group form-group--email">
+                    
+                      <label class="label label-danger label-danger--email label-not-margin label-block label-not-radius"></label>
+                     
+                      <input class="form-control form-control--email email input-lg input-not-radius float-label" placeholder="E-mail" id="email-donation" name="email" type="email">
                   </div>
-
-                  <div class="form-group form-group--credit_card_security_code">
-
-                    <label
-                      class="label label-danger label-danger--credit_card_security_code label-not-margin label-block label-not-radius"></label>
-
-                    <input
-                      class="form-control form-control--credit_card_security_code credit_card_security_code input-lg input-not-radius float-label"
-                      placeholder="Código de Segurança" name="credit_card_security_code" type="tel">
+  
+                  <div class="form-group form-group--gender">
+                     
+                      <label class="label label-danger label-danger--gender label-not-margin label-block label-not-radius"></label>
+                     
+                      <select class="form-control form-control--gender gender input-lg input-not-radius float-label" name="gender"><option selected="selected" value="">Sexo</option><option value="1">Masculino</option><option value="2">Feminino</option></select>
                   </div>
-
-                  <div class="form-group form-group--credit_card_validity_date">
-
-                    <label
-                      class="label label-danger label-danger--credit_card_validity_date label-not-margin label-block label-not-radius"></label>
-
-                    <input
-                      class="form-control form-control--credit_card_validity_date credit_card_validity_date input-lg input-not-radius float-label"
-                      placeholder="Validade" name="credit_card_validity_date" type="tel">
+  
+                  <div class="form-group form-group--birthday">
+                     
+                      <label class="label label-danger label-danger--birthday label-not-margin label-block label-not-radius"></label>
+                     
+                      <input class="form-control form-control--birthday birthday input-lg input-not-radius float-label" placeholder="Data de nascimento" name="birthday" type="tel">
                   </div>
-                </div>
-
-                <div class="fieldset fieldset-payment fieldset-payment--2 fieldset-payment--debit hidden--no-force">
-
-                  <div class="form-group form-group--bank">
-
-                    <label
-                      class="label label-danger label-danger--bank label-not-margin label-block label-not-radius"></label>
-
-                    <select class="form-control form-control--bank bank input-lg input-not-radius float-label"
-                      name="bank">
-                      <option selected="selected" value="">Banco</option>
-                      <option value="41">Banrisul</option>
-                      <option value="237">Bradesco</option>
-                      <option value="104">Caixa Econômica</option>
-                      <option value="33">Santander</option>
-                      <option value="756">Sicoob</option>
-                      <option value="748">Sicredi</option>
-                      <option value="341">Itaú</option>
-                      <option value="1">Banco do Brasil</option>
-                    </select>
+  
+                  <div class="form-group form-group--telephone">
+                     
+                      <label class="label label-danger label-danger--telephone label-not-margin label-block label-not-radius"></label>
+                     
+                      <input class="form-control form-control--telephone telephone input-lg input-not-radius float-label" placeholder="Telefone" autocomplete="off" name="telephone" type="tel">
                   </div>
-
-                  <div class="form-group form-group--agency">
-
-                    <label
-                      class="label label-danger label-danger--agency label-not-margin label-block label-not-radius"></label>
-
-                    <input class="form-control form-control--agency agency input-lg input-not-radius float-label"
-                      placeholder="Agência" name="agency" type="tel">
+  
+                  <div class="form-group form-group--cpf">
+                    
+                      <label class="label label-danger label-danger--cpf label-not-margin label-block label-not-radius"></label>
+                     
+                      <input class="form-control form-control--cpf cpf input-lg input-not-radius float-label" placeholder="CPF" id="cpf-donation" name="cpf" type="tel">
                   </div>
-
-                  <div class="form-group form-group--account">
-
-                    <label
-                      class="label label-danger label-danger--account label-not-margin label-block label-not-radius"></label>
-
-                    <input class="form-control form-control--account account input-lg input-not-radius float-label"
-                      placeholder="Conta" name="account" type="tel">
+  
+                  <div class="form-group form-group--payment hidden--no-force">
+                    
+                      <label class="label label-danger label-danger--payment label-not-margin label-block label-not-radius"></label>
+                     
+                      <select class="form-control form-control--payment payment input-lg input-not-radius float-label" name="payment"><option selected="selected" value="">Forma de pagamento</option></select>
                   </div>
-                </div>
-
-                <div class="fieldset fieldset-payment fieldset-payment--3 fieldset-payment--oi hidden--no-force">
-
-                  <div class="form-group form-group--zipcode">
-
-                    <label
-                      class="label label-danger label-danger--zipcode label-not-margin label-block label-not-radius"></label>
-
-                    <input class="form-control form-control--zipcode zipcode input-lg input-not-radius float-label"
-                      placeholder="CEP da fatura" name="zipcode" type="tel">
+  
+                  <div class="fieldset fieldset-payment fieldset-payment--1 fieldset-payment--credit_card hidden--no-force">
+  
+                    <div class="form-group form-group--credit_card_flag">
+                       
+                        <label class="label label-danger label-danger--credit_card_flag label-not-margin label-block label-not-radius"></label>
+                       
+                        <select class="form-control form-control--credit_card_flag credit_card_flag input-lg input-not-radius float-label" name="credit_card_flag"><option selected="selected" value="">Bandeira</option></select>
+                    </div>
+  
+                    <div class="form-group form-group--credit_card">
+                       
+                        <label class="label label-danger label-danger--credit_card label-not-margin label-block label-not-radius"></label>
+                       
+                        <input class="form-control form-control--credit_card credit_card input-lg input-not-radius float-label" placeholder="Número" name="credit_card" type="tel">
+                    </div>
+  
+                    <div class="form-group form-group--credit_card_holder">
+                       
+                        <label class="label label-danger label-danger--credit_card_holder label-not-margin label-block label-not-radius"></label>
+                       
+                        <input class="form-control form-control--credit_card_holder credit_card_holder input-lg input-not-radius float-label" placeholder="Nome impresso no Cartão" name="credit_card_holder" type="text">
+                    </div>
+  
+                    <div class="form-group form-group--credit_card_security_code">
+                       
+                        <label class="label label-danger label-danger--credit_card_security_code label-not-margin label-block label-not-radius"></label>
+                       
+                        <input class="form-control form-control--credit_card_security_code credit_card_security_code input-lg input-not-radius float-label" placeholder="Código de Segurança" name="credit_card_security_code" type="tel">
+                    </div>
+  
+                    <div class="form-group form-group--credit_card_validity_date">
+                       
+                        <label class="label label-danger label-danger--credit_card_validity_date label-not-margin label-block label-not-radius"></label>
+                        
+                        <input class="form-control form-control--credit_card_validity_date credit_card_validity_date input-lg input-not-radius float-label" placeholder="Validade" name="credit_card_validity_date" type="tel">
+                    </div>
                   </div>
-                </div>
-
-                <div class="fieldset fieldset-payment fieldset-payment--4 fieldset-payment--billet hidden--no-force">
-
-                </div>
-
-                <label
-                  class="label label--fail-donation label-warning label-not-margin label-block label-not-radius hidden--no-force"></label>
-
-                <div class="form-group form-group--lgpd">
-
-                  <label
-                    class="label label-danger label-danger--lgpd label-not-margin label-block label-not-radius"></label>
-
-                  <input name="lgpd" type="checkbox" value="Aceite"> Li e concordo que minhas informações serão tratadas
-                  de acordo com o <a target="_blank" href="https://www.lbv.org/privacidade">Aviso de Privacidade da
-                    LBV</a>
-                </div>
-
-                <input class="btn btn--submit btn-lg btn-not-radius btn-default btn-block" type="submit"
-                  value="Confirmar Doação">
-
+  
+                  <div class="fieldset fieldset-payment fieldset-payment--2 fieldset-payment--debit hidden--no-force">
+                   
+                    <div class="form-group form-group--bank">
+                    
+                        <label class="label label-danger label-danger--bank label-not-margin label-block label-not-radius"></label>
+                       
+  <select class="form-control form-control--bank bank input-lg input-not-radius float-label" name="bank"><option selected="selected" value="">Banco</option><option value="41">Banrisul</option><option value="237">Bradesco</option><option value="104">Caixa Econômica</option><option value="33">Santander</option><option value="756">Sicoob</option><option value="748">Sicredi</option><option value="341">Itaú</option><option value="1">Banco do Brasil</option></select>
+                    </div>
+  
+                    <div class="form-group form-group--agency">
+  
+                        <label class="label label-danger label-danger--agency label-not-margin label-block label-not-radius"></label>
+                        
+                        <input class="form-control form-control--agency agency input-lg input-not-radius float-label" placeholder="Agência" name="agency" type="tel">
+                    </div>
+  
+                    <div class="form-group form-group--account">
+  
+                        <label class="label label-danger label-danger--account label-not-margin label-block label-not-radius"></label>
+                        
+                        <input class="form-control form-control--account account input-lg input-not-radius float-label" placeholder="Conta" name="account" type="tel">
+                    </div>
+                  </div>
+  
+                  <div class="fieldset fieldset-payment fieldset-payment--3 fieldset-payment--oi hidden--no-force">
+                   
+                    <div class="form-group form-group--zipcode">
+  
+                        <label class="label label-danger label-danger--zipcode label-not-margin label-block label-not-radius"></label>
+                        
+                        <input class="form-control form-control--zipcode zipcode input-lg input-not-radius float-label" placeholder="CEP da fatura" name="zipcode" type="tel">
+                    </div>
+                  </div>
+  
+                  <div class="fieldset fieldset-payment fieldset-payment--4 fieldset-payment--billet hidden--no-force">
+                   
+                  </div>
+                
+                <label class="label label--fail-donation label-warning label-not-margin label-block label-not-radius hidden--no-force"></label>
+  
+                  <div class="form-group form-group--lgpd">
+  
+                  <label class="label label-danger label-danger--lgpd label-not-margin label-block label-not-radius"></label>
+                  
+                  <input name="lgpd" type="checkbox" value="Aceite"> Li e concordo que minhas informações serão tratadas de acordo com a lei
+                  </div>
+  
+                  <input class="btn btn--submit btn-lg btn-not-radius btn-default btn-block" type="submit" value="Confirmar Doação">
+              
               </form>
-
+  
             </div>
-
-            <p class="security-certificate"><span class="glyphicon glyphicon-lock"></span> Certificado de Segurança.</p>
+  
+            
           </div>
         </div>
+      </div>	
+    </div>
+
       </div>
+  
+      <footer id="footer">
+  
+        
 
-  <footer id="footer">
-<div class="modal modal--donation fade" data-backdrop="static">
-
+  
+    <div class="modal modal--donation fade" data-backdrop="static">
+      
       <div class="modal-dialog">
-
+      
         <div class="modal-content">
-
+        
           <button type="button" class="modal--close close closeRedirect" aria-hidden="true">×</button>
-
+        
           <div class="modal-body">
-
+            
             <h1 class="modal--big_title text-center">Muito Obrigado!</h1>
-
+  
             <br>
-
-            <p class="modal--big_description text-center" style="font-size:22px;">
-              Sua doação foi concluída e está em análise.<br>
+            
+            <p class="modal--big_description text-center" style="font-size:22px;">		
+                                                Sua doação foi concluída e está em análise.<br>
               Assim que aprovada, ela aparecerá na fatura do seu cartão de crédito em até 3 dias úteis.<br>
               Enviaremos um e-mail confirmando que deu tudo certo!
-            </p>
-            <iframe
-              src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.lbv.org%2Fdoar%2F%3Futm_medium%3DRedes%2520Sociais%26utm_source%3DFacebook%26utm_content%3DModal%2520Funil&amp;layout=button&amp;size=large&amp;mobile_iframe=true&amp;width=117&amp;height=28&amp;appId"
-              width="117" height="28" style="border:none;overflow:hidden;margin:30px auto 0px;display:table;"
-              scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+                  </p>
+              <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.lbv.org%2Fdoar%2F%3Futm_medium%3DRedes%2520Sociais%26utm_source%3DFacebook%26utm_content%3DModal%2520Funil&amp;layout=button&amp;size=large&amp;mobile_iframe=true&amp;width=117&amp;height=28&amp;appId" width="117" height="28" style="border:none;overflow:hidden;margin:30px auto 0px;display:table;" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
           </div>
         </div>
       </div>
     </div>
-
+  
     <div class="modal modal--donation_with_billet fade">
-
+      
       <div class="modal-dialog">
-
+      
         <div class="modal-content">
-
+        
           <button type="button" class="modal--close close" data-dismiss="modal" aria-hidden="true">×</button>
-
+        
           <div class="modal-body">
-
+            
             <h1 class="modal--big_title text-center">Obrigado!</h1>
-
+  
             <br>
-
+            
             <p class="modal--big_description text-center">Sua doação foi confirmada.</p>
           </div>
-
+  
           <br>
-
+  
           <div class="modal-footer">
-
-            <p class="modal--description text-left">Seu boleto já foi gerado. Para concluir a doação, basta fazer o
-              pagamento do jeito que preferir.</p>
-
-            <a target="_blank" class="modal--billet_link btn btn-not-radius btn-lg btn-primary center-block"><i
-                class="glyphicon glyphicon-print" style="margin-right: 10px;"></i>Imprimir boleto</a>
+            
+            <p class="modal--description text-left">Seu boleto já foi gerado. Para concluir a doação, basta fazer o pagamento do jeito que preferir.</p>
+  
+            <a target="_blank" class="modal--billet_link btn btn-not-radius btn-lg btn-primary center-block"><i class="glyphicon glyphicon-print" style="margin-right: 10px;"></i>Imprimir boleto</a>
           </div>
         </div>
       </div>
     </div>
-
-    <!--Inicio Modal PicPay-->
-    <div class="modal modal--donation_with_picpay fade" data-backdrop="static">
-
+  
+  <!--Inicio Modal PicPay-->
+  <div class="modal modal--donation_with_picpay fade" data-backdrop="static">
+  
       <div class="modal-dialog">
-
-        <div class="modal-content">
-
-          <button type="button" class="modal--close close closeRedirect" aria-hidden="true">×</button>
-
-          <div class="modal-body">
-
-            <h1 class="modal--big_title text-center">Obrigado!</h1>
-
-            <br>
-
-            <p class="modal--big_description text-center">Estamos quase lá =)</p>
+  
+          <div class="modal-content">
+  
+             <button type="button" class="modal--close close closeRedirect" aria-hidden="true">×</button>
+  
+                      <div class="modal-body">
+  
+                          <h1 class="modal--big_title text-center">Obrigado!</h1>
+  
+                          <br>
+  
+                          <p class="modal--big_description text-center">Estamos quase lá =)</p>
+                      </div>
+  
+                      <br>
+  
+                      <div class="modal-footer">
+  
+                          <p class="modal--description text-left">Você receberá a notificação do PicPay para concluir sua
+                              doação diretamente no aplicativo. Caso prefira, também pode escanear o QRCode abaixo.</p>
+  
+                          <img class="qrcode" src="" alt="" style="width: 40%;">
+  
+                          <p class="modal--description text-left">Se ainda não tem o aplicativo instalado, direcionaremos
+                              você para sua loja de aplicativos.</p>
+  
+                      </div>
           </div>
-
-          <br>
-
-          <div class="modal-footer">
-
-            <p class="modal--description text-left">Você receberá a notificação do PicPay para concluir sua
-              doação diretamente no aplicativo. Caso prefira, também pode escanear o QRCode abaixo.</p>
-
-            <img class="qrcode" src="" alt="" style="width: 40%;">
-
-            <p class="modal--description text-left">Se ainda não tem o aplicativo instalado, direcionaremos
-              você para sua loja de aplicativos.</p>
-
-          </div>
-        </div>
       </div>
-    </div>
-    <!--Fim Modal PicPay-->
-
-    <!--Inicio Modal Pix -->
-    <div class="modal modal--donation_with_pix fade" data-backdrop="static">
-
-      <div class="modal-dialog">
-
-        <div class="modal-content">
-
-          <!-- <button type='button' class='modal--close close' data-dismiss='modal' aria-hidden='true'>×</button> -->
-
-          <div class="modal-body">
-
-            <h1 class="modal--big_title text-center">Estamos quase lá =)</h1>
-
-            <br>
-
-            <p class="modal--big_description text-center"></p>
+  </div>
+  <!--Fim Modal PicPay-->
+  
+  <!--Inicio Modal Pix -->
+  <div class="modal modal--donation_with_pix fade" data-backdrop="static">
+  
+                  <div class="modal-dialog">
+  
+                          <div class="modal-content">
+  
+                                 <!-- <button type='button' class='modal--close close' data-dismiss='modal' aria-hidden='true'>×</button> -->
+  
+                                  <div class="modal-body">
+  
+                                          <h1 class="modal--big_title text-center">Estamos quase lá =)</h1>
+  
+                                          <br>
+  
+                                          <p class="modal--big_description text-center"></p>
+                                  </div>
+  
+                                  <br>
+  
+                                  <div class="modal-footer">
+  
+                                          <p class="modal--description text-left">Você está sendo redirecionado a outra página para finalizar a transação pelo Pix. Após, é só escanear o QR Code na tela ou copiar o código e efetuar a doação por intermédio do seu banco de preferência.</p>
+  
+                                  </div>
+                          </div>
+                  </div>
           </div>
-
-          <br>
-
-          <div class="modal-footer">
-
-            <p class="modal--description text-left">Você está sendo redirecionado a outra página para finalizar a
-              transação pelo Pix. Após, é só escanear o QR Code na tela ou copiar o código e efetuar a doação por
-              intermédio do seu banco de preferência.</p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Fim Modal Pix -->
-
+  <!-- Fim Modal Pix -->
+  
     <div class="modal modal--bank fade">
-
+      
       <div class="modal-dialog">
-
+  
         <div class="modal-content">
-
+  
           <div class="modal-body">
-
+          
             <p class="modal--title text-center" style="color: red;">Aviso importante</p>
-
+  
             <br>
-            <p id="specific" class="modal--description"><b style="color: red;">Doações através do Banco do Brasil ou
-                Itaú só estão disponíveis caso você já seja um doador mensal por estes bancos. Caso contrário, por
-                favor, escolha outra forma de cobrança.</b><br><br><b>Autorização Manual</b><br>
-              Realizando sua doação no site, você também precisará autorizá-la manualmente em seu banco.<br><br>Você
-              poderá fazer isso através dos Caixas Eletrônicos, Site ou Aplicativo do Banco e Central de Atendimento
-              <b>em até 5 dias após sua doação.</b><br><br>Sem a autorização manual neste período, o banco <b>não
-                efetivará sua doação.</b></p>
-
+  <p id="specific" class="modal--description"><b style="color: red;">Doações através do Banco do Brasil ou Itaú só estão disponíveis caso você já seja um doador mensal por estes bancos. Caso contrário, por favor, escolha outra forma de cobrança.</b><br><br><b>Autorização Manual</b><br>
+  Realizando sua doação no site, você também precisará autorizá-la manualmente em seu banco.<br><br>Você poderá fazer isso através dos Caixas Eletrônicos, Site ou Aplicativo do Banco e Central de Atendimento <b>em até 5 dias após sua doação.</b><br><br>Sem a autorização manual neste período, o banco <b>não efetivará sua doação.</b></p>
+        
           </div>
-
+  
           <div class="modal-footer">
-
-            <button type="button" class="btn btn-not-radius btn-primary" data-dismiss="modal">Ok, Completar minha
-              Doação</button>
+            
+            <button type="button" class="btn btn-not-radius btn-primary" data-dismiss="modal">Ok, Completar minha Doação</button>
           </div>
         </div>
       </div>
     </div>
-
+  
     <div class="modal--loading modal fade" data-backdrop="static">
-
+      
       <div class="modal-dialog">
-
+        
         <div class="modal-content">
-
+          
           <div class="modal-body">
-
+            
             <div class="modal--loading_icon glyphicon glyphicon-refresh spin"></div>
-
+            
             <br><br>
-
+  
             <p class="modal--description">Estamos confirmando a sua doação ...</p>
           </div>
         </div>
       </div>
     </div>
+  
+  
+  <style>
 
-
-    <style>
-      body {
-        background: url(images/9.jpg) center center /cover no-repeat fixed;
-      }
-
-      .copyright {
-        background-color: #0b0b0c7a;
-        width: 20%;
-        margin-left: 30%;
-        margin-right: 30%;
-      }
-    </style>
-
-
-    <script>
-      $(document).ready(function () {
-        $('.closeRedirect').click(function () {
-          $(location).attr('href', 'https://lbv.org/transparencia');
-        });
-      });
-
-      const urlParams = new URLSearchParams(window.location.search);
-      const myParam = urlParams.get('term_lgpd');
-      if (myParam === "checked") {
-        $(".form-group--lgpd input").attr("checked", "");
-      }
-    </script>
-
-  </footer>
-
-
-
-
-</body>
+  .copyright {
+   background-color: #0b0b0c7a;
+   width: 20%;
+   margin-left: 30%;
+   margin-right: 30%;
+  }
+  </style>
+  
+  
+  <script>
+  $(document).ready(function(){
+    $('.closeRedirect').click(function(){
+      $(location).attr('href', 'https://lbv.org/transparencia');
+    });
+  });
+  
+  const urlParams = new URLSearchParams(window.location.search);
+  const myParam = urlParams.get('term_lgpd');
+  if (myParam === "checked") {
+      $(".form-group--lgpd input").attr("checked", "");
+  }
+  </script>
+  
+      </footer>
+      
+        
+    
+  
+  </body></html>
 
 {% endblock %}
