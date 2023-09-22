@@ -1,9 +1,9 @@
 from django import forms
-from .models import Doar
+from .models import Doador
 
 class modelform(forms.ModelForm):
     class Meta:
-        model = Doar
+        model = Doador
         fields = ['valor_doacao','nome', 'email', 'sexo', 'data_nascimento', 'telefone', 'cpf' ]
 
 class MeuFormulario(forms.Form):

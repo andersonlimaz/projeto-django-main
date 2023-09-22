@@ -68,11 +68,11 @@
       
       <script type="text/javascript">	
   
-        base_url = 'https://doar.lbv.org';
+        base_url = 'http://127.0.0.1:8000/';
   
-        donation_url = 'https://doar.lbv.org';
+        donation_url = 'http://127.0.0.1:8000/servicos/';
   
-        product_url = 'https://doar.lbv.org/product';
+        product_url = 'http://127.0.0.1:8000/blog/';
   
         api = {"version":"v1","payment":{"credit_card":{"code":1},"debit":{"code":2},"oi":{"code":3},"billet":{"code":4},"instant_payment":{"code":5},"picpay":{"code":6},"pix":{"code":7}},"credit_card_flag":{"visa":{"code":1},"mastercard":{"code":2},"elo":{"code":3},"hipercard":{"code":4},"amex":{"code":5},"diners":{"code":6}},"gender":{"male":{"code":1},"female":{"code":2}},"type":{"submission_successful":{"code":0},"submission_failure":{"code":1},"filling":{"code":2},"pre_filling":{"code":3}},"periodicity":{"once":{"code":1},"monthly":{"code":2}},"bank":{"banrisul":{"code":41},"bradesco":{"code":237},"caixa":{"code":104},"hsbc":{"code":399},"santander":{"code":33},"sicoob":{"code":756},"sicredi":{"code":748},"itau":{"code":341},"banco_brasil":{"code":1}},"http_code":{"success":{"code":200},"created":{"code":201},"bad_request":{"code":400},"unauthorized":{"code":401},"forbidden":{"code":403},"not_found":{"code":404},"method_not_allowed":{"code":405},"not_acceptable":{"code":406},"unavailable":{"code":503},"internal_error":{"code":500}},"country":{"brazil":{"code":1},"argentina":{"code":2}},"min_age":18,"min_amount":5,"product":{"t_shirt":{"code":1,"data":{"size":{"extra_small":{"code":1},"small":{"code":2},"medium":{"code":3},"large":{"code":4},"extra_large":{"code":5},"extra_extra_large":{"code":6}},"color":{"blue":{"code":1},"green":{"code":2},"gray":{"code":3}},"stamp":{"thought":{"love_conquest":{"code":1},"destiny":{"code":2}}}}},"pen_drive":{"code":2,"data":{"storage":{"2gb":{"code":1},"4gb":{"code":2}}}}},"available_payments":[1,6,7],"available_credit_card_flags":[1,2,5,6,3,4]}
       </script>
@@ -129,7 +129,7 @@
   
             <div class="well well-sm">
   
-              <form method="POST" action="https://doar.lbv.org/ " accept-charset="UTF-8" class="form--donation"><input name="_token" type="hidden" value="tVC7cfpDqryRZ3ygjFV8rsLT30Q6cp3AF7BwP22S">
+              <form method="POST" accept-charset="UTF-8" class="form--donation"><input name="_token" type="hidden" value="tVC7cfpDqryRZ3ygjFV8rsLT30Q6cp3AF7BwP22S">
   
                     <input name="transaction_code" type="hidden" value="2023092101101336">
   

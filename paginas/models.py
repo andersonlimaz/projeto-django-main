@@ -1,19 +1,18 @@
+from django import forms
 from django.db import models
 
-# Create your models here.
 
-class modelform(models.Model):
+class Doador(models.Model):
     nome = models.CharField(max_length=30)
     email = models.EmailField()
-    SEXO_CHOICES = [
-        ('M', 'Masculino'),
-        ('F', 'Feminino'),
-    ]
-    sexo = models.CharField(max_length=1, choices=SEXO_CHOICES)
-    data_nascimento = models.DateField()
+    valor_doacao = models.DecimalField(max_digits=10, decimal_places=2)
     telefone = models.CharField(max_length=15)
-    cpf = models.CharField(max_length=14, unique=True)
-    valor_doacao = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
+    data_nascimento = models.DateField()
+    sexo = models.CharField(max_length=1, choices=[('M', 'Masculino'), ('F', 'Feminino')])
+    cpf = models.CharField(max_length=14)
 
-    def __str__(self):
-        return self.nome
+class DoadorForm(forms.ModelForm):
+    class Meta:
+        model = Doador
+        fields = ['valor_doacao', 'nome', 'email', 'sexo', 'data_nascimento', 'telefone', 'cpf']
+

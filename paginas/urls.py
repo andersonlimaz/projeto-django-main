@@ -9,6 +9,6 @@ urlpatterns = [
     path('servicos/', Servicos.as_view(), name='servicos'),
     path('blog/', Blog.as_view(), name='blog'),
     path('contato/', Contato.as_view(), name='contato'),
-    path('modelform/', views.form_modelform(), name='form_modelform'),
+    path('modelform/', views.form_modelform, name='form_modelform'),
 
 ]
