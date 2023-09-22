@@ -24,9 +24,9 @@ def form_modelform(request):
     if request.method == 'POST':
         form = modelform(request.POST)
         if form.is_valid():
-            form.save()  # Isso salva os dados no banco de dados
-            return redirect('página_de_sucesso')  # Redirecione para uma página de sucesso após a doação ser salva
+            form.save()  
+            return redirect('página_de_sucesso')  
     else:
         form = modelform()
 
-    return render(request, 'sua_template.html', {'form': form})
+    return render(request, 'about-us.html', {'form': form})
