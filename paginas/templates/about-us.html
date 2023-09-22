@@ -322,12 +322,16 @@
                   
                   <input name="lgpd" type="checkbox" value="Aceite"> Li e concordo que minhas informações serão tratadas de acordo com a lei
                   </div>
+
                   <form method="post" action="{% url 'doe' %}">
                   {% csrf_token %}
                   {{ formulario.as_p }}
                   <input class="btn btn--submit btn-lg btn-not-radius btn-default btn-block" type="submit" value="Confirmar Doação">
                 </form>
               </form>
+              {% if enviado_com_sucesso %}
+                <p>Formulário enviado com sucesso!</p>
+              {% endif %}
   
             </div>
   
