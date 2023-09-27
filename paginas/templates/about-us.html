@@ -129,8 +129,8 @@
   
             <div class="well well-sm">
   
-              <form method="POST" accept-charset="UTF-8" class="form--donation"><input name="_token" type="hidden" value="tVC7cfpDqryRZ3ygjFV8rsLT30Q6cp3AF7BwP22S">
-  
+              <form action="{% url 'doe' %}"  method="post" accept-charset="UTF-8" class="form--donation"><input name="_token" type="hidden" value="tVC7cfpDqryRZ3ygjFV8rsLT30Q6cp3AF7BwP22S">
+                  {% csrf_token %}
                     <input name="transaction_code" type="hidden" value="2023092101101336">
   
                     <input name="ip" type="hidden" value="194.87.31.36">
@@ -192,8 +192,8 @@
                   <div class="form-group form-group--name">
                      
                       <label class="label label-danger label-danger--name label-not-margin label-block label-not-radius"></label>
-                      
-                      <input class="form-control form-control--name name input-lg input-not-radius float-label" placeholder="Nome Completo" id="name-donation" name="name" type="text">
+                      name=
+                      <input class="form-control form-control--name name input-lg input-not-radius float-label" placeholder="Nome Completo" id="name-donation" "name" type="text">
                   </div>
   
                   <div class="form-group form-group--email">
@@ -323,11 +323,8 @@
                   <input name="lgpd" type="checkbox" value="Aceite"> Li e concordo que minhas informações serão tratadas de acordo com a lei
                   </div>
 
-                  <form method="post" action="{% url 'doe' %}">
-                  {% csrf_token %}
-                  {{ formulario.as_p }}
                   <input class="btn btn--submit btn-lg btn-not-radius btn-default btn-block" type="submit" value="Confirmar Doação">
-                </form>
+                
               </form>
               {% if enviado_com_sucesso %}
                 <p>Formulário enviado com sucesso!</p>
